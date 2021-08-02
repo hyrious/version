@@ -3,9 +3,6 @@ import url from "url";
 import path from "path";
 import callerPath from "caller-path";
 
-/** @type {string | undefined} */
-let cached;
-
 /** @returns {string | undefined} */
 function lookup(/** @type {string} */ dir) {
   const file = path.join(dir, "package.json");
