@@ -1,0 +1,32 @@
+{
+  "name": "@hyrious/version",
+  "version": "0.1.0",
+  "description": "Add --version to your cli.",
+  "main": "index.js",
+  "module": "index.mjs",
+  "types": "index.d.ts",
+  "exports": {
+    "import": "./index.mjs",
+    "require": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "index.mjs",
+    "index.d.ts"
+  ],
+  "repository": "hyrious/version",
+  "scripts": {
+    "test": "node ./test/bin.js --version && node ./test/bin.mjs --version"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "hyrious <hyrious@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.4.10"
+  },
+  "dependencies": {
+    "caller-path": "^3.0.1"
+  }
+}
